@@ -42,15 +42,15 @@ function Intro() {
           </motion.span>
         </div>
       </div>
-      <motion.p
+      <motion.h1
         className="mb-10 mt-4 px-4 text-4xl font-medium !leading-[1.5] sm:text-2xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-bold">Hello, I'm Baskara.</span> I'm a
-        <span className="font-bold"> junior full-stack web developer</span>
-        <span>and welcome to my personal website </span>
-      </motion.p>
+        <span className="font-bold"> junior full-stack web developer </span>
+        and welcome to my personal website
+      </motion.h1>
 
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-2.5 px-4 text-lg font-medium"
