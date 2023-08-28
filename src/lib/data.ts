@@ -68,7 +68,7 @@ export const projectsData = [
     title: "Shopify",
     description:
       "Final Project from Bootcamp as a group. Our job is to create features client-side and server-side based on our task.",
-    tags: ["React", "Javascript", "MYSQL", "Tailwind", "Express.js"],
+    tags: ["React", "Javascript", "MYSQL", "Tailwind", "DaisyUI", "Express.js"],
     imageUrl: blankImage,
   },
   {

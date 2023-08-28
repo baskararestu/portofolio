@@ -1,4 +1,5 @@
 "use client";
+
 import Image from "next/image";
 import React from "react";
 import profile from "@@/public/foto_saya2.jpg";
@@ -7,10 +8,17 @@ import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
+import { useSectionInView } from "@/lib/hooks";
 
 function Intro() {
+  const { ref } = useSectionInView("Home", 0.9);
+
   return (
-    <section className="mb-28 max-w-[50rem] text-center sm:mb-0 flex flex-col">
+    <section
+      ref={ref}
+      id="home"
+      className="mb-28 max-w-[50rem] text-center sm:mb-0 flex flex-col scroll-mt-36"
+    >
       <div className="flex justify-center items-center">
         <div className="relative">
           <motion.div
