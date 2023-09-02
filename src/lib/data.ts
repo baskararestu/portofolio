@@ -36,15 +36,15 @@ export const experiencesData = [
     description:
       "I graduate from Pakuan University after 4 years of studying with GPA: 3.53.",
     icon: React.createElement(CgWorkAlt),
-    date: "10-2022",
+    date: "Oct-2022",
   },
   {
     title: "Graduated bootcamp",
     location: "Bogor, Indonesia",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "I graduated after 6 months of studying including final project with a team",
     icon: React.createElement(LuGraduationCap),
-    date: "08-2023",
+    date: "Aug-2023",
   },
 ] as const;
 
@@ -59,7 +59,16 @@ export const projectsData = [
     title: "Shopify",
     description:
       "Final Project from Bootcamp as a group. Our job is to create features client-side and server-side based on our task.",
-    tags: ["React", "Javascript", "MYSQL", "Tailwind", "DaisyUI", "Express.js"],
+    tags: [
+      "React",
+      "Javascript",
+      "Tailwind",
+      "Redux",
+      "DaisyUI",
+      "MYSQL",
+      "Express.js",
+      "Nodemailer",
+    ],
     imageUrl: blankImage,
   },
   {
@@ -74,6 +83,7 @@ export const projectsData = [
       "DaisyUI",
       "MYSQL",
       "Express.js",
+      "Nodemailer",
     ],
     imageUrl: blankImage,
   },
@@ -81,7 +91,7 @@ export const projectsData = [
     title: "Point of Sales",
     description:
       "A mini project created to assist small businesses in implementing a payment system, enabling order processing, and generating clear sales reports.",
-    tags: ["React", "JAVASCRIPT", "Tailwind", "MYSQL", "EXPRESS.js"],
+    tags: ["React", "JAVASCRIPT", "Tailwind", "Redux", "MYSQL", "EXPRESS.js"],
     imageUrl: blankImage,
   },
 ] as const;
