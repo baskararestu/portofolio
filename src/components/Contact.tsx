@@ -22,7 +22,7 @@ function Contact() {
       viewport={{ once: true }}
     >
       <SectionHeading>Contact me</SectionHeading>
-      <p className="text-gray-700 -mt-6">
+      <p className="text-gray-700 -mt-6 dark:text-white/80">
         Please contact me directly at{" "}
         <a className="underline" href="mailto:baskararw10@outlook.com">
           baskararw10@outlook.com
@@ -35,10 +35,9 @@ function Contact() {
           const { data, error } = await sendEmail(formData);
           if (error) {
             toast.error(error);
-            return;
+          } else {
+            toast.success("Email sent successfully!");
           }
-
-          toast.success("Email sent successfully!");
         }}
       >
         <input

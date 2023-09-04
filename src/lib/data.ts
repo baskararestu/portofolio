@@ -1,5 +1,4 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
 import blankImage from "@@/public/blank-image.jpg";
 export const links = [
@@ -32,17 +31,17 @@ export const links = [
 export const experiencesData = [
   {
     title: "Bachelor's Degree in Mathematics",
-    location: "Pakuan University - Bogor, Indonesia",
-    description:
-      "I graduate from Pakuan University after 4 years of studying with GPA: 3.53.",
-    icon: React.createElement(CgWorkAlt),
+    location: "Bogor, Indonesia",
+    description: `After completing my Bachelor's Degree in Mathematics from Pakuan University 
+    in October 2022, I decided to transition into programming.`,
+    icon: React.createElement(LuGraduationCap),
     date: "Oct-2022",
   },
   {
     title: "Graduated bootcamp",
     location: "Bogor, Indonesia",
-    description:
-      "I graduated after 6 months of studying including final project with a team",
+    description: `In August 2023, I completed a six-month full-stack programming bootcamp at 
+    Purwadhika Digital Technology School, Indonesia, with a strong focus on JavaScript, React, and practical problem-solving.`,
     icon: React.createElement(LuGraduationCap),
     date: "Aug-2023",
   },
