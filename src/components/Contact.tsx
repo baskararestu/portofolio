@@ -10,6 +10,7 @@ import { toast } from "react-hot-toast";
 
 function Contact() {
   const { ref } = useSectionInView("Contact");
+  const recipientEmail = process.env.RESEND_RECIPIENT_EMAIL;
 
   return (
     <motion.section

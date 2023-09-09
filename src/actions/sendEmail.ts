@@ -11,7 +11,6 @@ export const sendEmail = async (formData: FormData) => {
   const senderEmail = formData.get("senderEmail");
   const message = formData.get("message");
 
-  // simple server-side validation
   if (!validateString(senderEmail, 500)) {
     return {
       error: "Invalid sender email",
@@ -23,11 +22,19 @@ export const sendEmail = async (formData: FormData) => {
     };
   }
 
+  const recipientEmail = process.env.RESEND_RECIPIENT_EMAIL;
+  console.log(recipientEmail);
+  if (typeof recipientEmail !== "string" || recipientEmail.trim() === "") {
+    return {
+      error: "Recipient email is not defined or empty",
+    };
+  }
+
   let data;
   try {
     data = await resend.emails.send({
       from: "Contact Form <onboarding@resend.dev>",
-      to: "baskararw10@gmail.com",
+      to: recipientEmail,
       subject: "Message from contact form",
       reply_to: senderEmail,
       react: React.createElement(ContactFormEmail, {
@@ -36,6 +43,7 @@ export const sendEmail = async (formData: FormData) => {
       }),
     });
   } catch (error: unknown) {
+    console.log(error);
     return {
       error: getErrorMessage(error),
     };
