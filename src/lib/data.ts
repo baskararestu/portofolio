@@ -1,6 +1,9 @@
 import React from "react";
 import { LuGraduationCap } from "react-icons/lu";
 import blankImage from "@@/public/blank-image.jpg";
+import shopify from "@@/public/shopify.png";
+import myPortofolio from "@@/public/myPortofolio.png";
+
 export const links = [
   {
     name: "Home",
@@ -52,7 +55,9 @@ export const projectsData = [
     title: "Personal Portofolio",
     description: "My website portofolio and my first project using Next.js",
     tags: ["TypeScript", "React", "Next.js", "Tailwind", "Framer"],
-    imageUrl: blankImage,
+    imageUrl: myPortofolio,
+    githubLink: "https://github.com/baskararestu/portofolio",
+    webAppLink: "https://baskararw.com",
   },
   {
     title: "Shopify",
@@ -68,7 +73,9 @@ export const projectsData = [
       "Express.js",
       "Nodemailer",
     ],
-    imageUrl: blankImage,
+    imageUrl: shopify,
+    githubLink: "https://github.com/baskararestu/shopify",
+    webAppLink: "https://shopify.baskararw.com",
   },
   {
     title: "Image-Apps",
@@ -85,13 +92,17 @@ export const projectsData = [
       "Nodemailer",
     ],
     imageUrl: blankImage,
+    githubLink: "https://github.com/baskararestu/fe-image-gallery-app",
+    webAppLink: "https://galleryapp.baskararw.com",
   },
   {
-    title: "Point of Sales",
+    title: "CashierApp",
     description:
       "A mini project created to assist small businesses in implementing a payment system, enabling order processing, and generating clear sales reports.",
     tags: ["React", "JAVASCRIPT", "Tailwind", "Redux", "MYSQL", "EXPRESS.js"],
     imageUrl: blankImage,
+    githubLink: "https://github.com/baskararestu/fe-cashierapp-group-08",
+    webAppLink: "https://cashierapp.baskararw.com",
   },
 ] as const;
 
